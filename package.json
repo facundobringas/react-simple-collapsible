@@ -3,6 +3,7 @@
   "version": "1.0.21",
   "description": "A very simple animated Collapsible component for React",
   "main": "build/index.js",
+  "license": "MIT",
   "peerDependencies": {
     "react": "^15.5.10"
   },

@@ -76,3 +76,7 @@ That way, you can leave the JS clean and keep the styles within the CSS.
 ## About
 
 This project was written and is maintained by [Facundo Larrosa Bringas](https://github.com/facundobringas).
+
+## License
+
+MIT
