@@ -36,7 +36,6 @@ class App extends Component {
     return (
       <div className="App">
          <Collapsible headerTitle="Very Simple Title">
-            <h4>Very Simple Content</h4>
             <p>Insert any html you want in here...</p>
         </Collapsible>
       </div>
