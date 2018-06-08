@@ -8,9 +8,8 @@
 .collapsible-header{
 	padding: 0.5em;
 	display: block;
-	font-weight: bold;
-    border-top: solid 1px #d0d0d0;
-	background-color: aliceblue;
+    border-bottom: solid 1px #d9dadb;
+	background-color: #eee;
 	min-height: 1em;
 }
 

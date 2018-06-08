@@ -40,8 +40,7 @@ class Collapsible extends Component{
 				<div id={`collapsible_header_${this.state.identifier}`}
 					className="collapsible-header">
 					{this.props.headerTitle}
-					<img 
-						id={`collapsible_header_arrow_${this.state.identifier}`}
+					<img id={`collapsible_header_arrow_${this.state.identifier}`}
 						className="collapsible-header-arrow" src={downArrow}/>
 				</div>
 				<div id={`collapsible_content_${this.state.identifier}`} 
