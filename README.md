@@ -1,15 +1,15 @@
 # react-simple-collapsible
 
-[![npm](https://img.shields.io/badge/npm-v1.0.22-green.svg)](https://www.npmjs.com/package/react-simple-collapsible)
+[![npm](https://img.shields.io/badge/npm-v1.0.23-green.svg)](https://www.npmjs.com/package/react-simple-collapsible)
 
 A very simple , customizable and animated collapsible component for React.
+
+![demonstration](https://github.com/facundobringas/react-simple-collapsible/raw/master/assets/collapsible-sample.gif)
 
 ## Features
 - Fully customizable
 - Easy to use
 - Animated!
-
-![demonstration](https://github.com/facundobringas/react-simple-collapsible/raw/master/assets/collapsible-sample.gif)
 
 ## Installation
 
