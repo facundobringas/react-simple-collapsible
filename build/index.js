@@ -547,9 +547,6 @@ var Collapsible = function (_Component) {
 	}
 
 	_createClass(Collapsible, [{
-		key: 'componentDidMount',
-		value: function componentDidMount() {}
-	}, {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
@@ -559,8 +556,7 @@ var Collapsible = function (_Component) {
 					onClick: this.toggle },
 				_react2.default.createElement(
 					'div',
-					{
-						id: 'collapsible_header_' + this.state.identifier,
+					{ id: 'collapsible_header_' + this.state.identifier,
 						className: 'collapsible-header' },
 					this.props.headerTitle,
 					_react2.default.createElement('img', {
@@ -569,8 +565,7 @@ var Collapsible = function (_Component) {
 				),
 				_react2.default.createElement(
 					'div',
-					{
-						id: 'collapsible_content_' + this.state.identifier,
+					{ id: 'collapsible_content_' + this.state.identifier,
 						className: 'collapsible-content' },
 					_react2.default.createElement(
 						'div',

@@ -1,23 +1,23 @@
-import './style.css'
-import React, { Component } from 'react'
-import downArrow from 'assets/arrow_down.svg'
-import newIdentifier from '../../utils/newid'
+import './style.css';
+import React, { Component } from 'react';
+import downArrow from 'assets/arrow_down.svg';
+import newIdentifier from '../../utils/newid';
 
 class Collapsible extends Component{
 	
 	state = {
 			collapsed:this.props.collapsed,
-			identifier: newIdentifier(),
+			identifier: newIdentifier()
 		}
 		
 	toggle= (e) => {
 		if(this.state.collapsed){
-			let sheet = window.document.styleSheets[0]
-			let tkns = e.target.id.split('_')
-			let identifier = tkns[tkns.length-1]
-			let id = tkns[0].concat('_').concat(identifier)
-			let contentId = tkns[0].concat('_').concat('content').concat('_').concat(identifier)
-			let scrollHeight = document.getElementById(contentId).scrollHeight
+			let sheet = window.document.styleSheets[0];
+			let tkns = e.target.id.split('_');
+			let identifier = tkns[tkns.length-1];
+			let id = tkns[0].concat('_').concat(identifier);
+			let contentId = tkns[0].concat('_').concat('content').concat('_').concat(identifier);
+			let scrollHeight = document.getElementById(contentId).scrollHeight;
 			let rule = `#${id}.opened>.collapsible-content{
 				height: ${scrollHeight}px;
 				-webkit-transition:height, 0.4s ease-out;
@@ -25,15 +25,11 @@ class Collapsible extends Component{
 				-ms-transition: height, 0.4s ease-out;
 				-o-transition: height, 0.4s ease-out;
 				transition: height, 0.4s ease-out;
-			}`
-			sheet.insertRule(rule, sheet.cssRules.length)
+			}`;
+			sheet.insertRule(rule, sheet.cssRules.length);
 		}
 
-		this.setState({collapsed:!this.state.collapsed})
-	}
-
-	componentDidMount(){
-
+		this.setState({collapsed:!this.state.collapsed});
 	}
 
 	render(){
@@ -41,24 +37,22 @@ class Collapsible extends Component{
 			<div id={`collapsible_${this.state.identifier}`}
 				className={`collapsible ${this.state.collapsed ? 'collapsed' : 'opened' }`}
 				onClick={this.toggle}>
-				<div 
-					id={`collapsible_header_${this.state.identifier}`}
+				<div id={`collapsible_header_${this.state.identifier}`}
 					className="collapsible-header">
 					{this.props.headerTitle}
 					<img 
 						id={`collapsible_header_arrow_${this.state.identifier}`}
 						className="collapsible-header-arrow" src={downArrow}/>
 				</div>
-				<div
-					id={`collapsible_content_${this.state.identifier}`} 
+				<div id={`collapsible_content_${this.state.identifier}`} 
 					className="collapsible-content">
 					<div className="collapsible-content-wrapper">
 						{this.props.children}
 						</div>
 				</div>
 			</div>	
-		)
+		);
 	}
 }
 
-export default Collapsible
+export default Collapsible;
