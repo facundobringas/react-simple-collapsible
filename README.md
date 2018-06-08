@@ -65,7 +65,7 @@ For expample:
 }
 
 .collapsible-content{
-	font-weight: italic;
+	font-style: italic;
 }
 ```
 

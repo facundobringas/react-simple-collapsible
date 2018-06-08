@@ -1,6 +1,6 @@
 {
   "name": "react-simple-collapsible",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A very simple animated Collapsible component for React",
   "main": "build/index.js",
   "peerDependencies": {
