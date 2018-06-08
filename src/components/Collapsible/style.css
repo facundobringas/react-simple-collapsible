@@ -1,0 +1,63 @@
+
+.collapsible{
+	height: auto;
+	text-align: left;
+	font-size: 1em;
+}
+
+.collapsible-header{
+	padding: 0.5em;
+	display: block;
+	font-weight: bold;
+    border-top: solid 1px #d0d0d0;
+	background-color: aliceblue;
+	min-height: 1em;
+}
+
+.collapsible-content{
+	overflow: hidden;
+}
+
+.collapsible-content-wrapper{
+	padding: 0.5em;
+}
+
+.collapsed>.collapsible-content{
+	height: 0;
+	-webkit-transition:height, 0.4s ease-out;
+    -moz-transition: height, 0.4s ease-out;
+    -ms-transition: height, 0.4s ease-out;
+    -o-transition: height, 0.4s ease-out;
+	transition: height, 0.4s ease-out;
+}
+
+.collapsed>.collapsible-header>.collapsible-header-arrow{
+	-webkit-transition: -webkit-transform, 0.4s ease-out;
+    -moz-transition: -moz-transform, 0.4s ease-out;
+    -ms-transition: -ms-transform, 0.4s ease-out;
+    -o-transition: -o-transform, 0.4s ease-out;
+    transition: transform, 0.4s ease-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform:rotate(0deg);
+}
+
+.opened>.collapsible-header>.collapsible-header-arrow{
+	-webkit-transition: -webkit-transform, 0.4s ease-out;
+    -moz-transition: -moz-transform, 0.4s ease-out;
+    -ms-transition: -ms-transform, 0.4s ease-out;
+    -o-transition: -o-transform, 0.4s ease-out;
+    transition: transform, 0.4s ease-out;
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	transform:rotate(-180deg);
+}
+
+.collapsible-header-arrow{
+	vertical-align: middle;
+	float: right;
+}
