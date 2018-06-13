@@ -2,6 +2,7 @@ import './style.css';
 import React, { Component } from 'react';
 import downArrow from 'assets/arrow_down.svg';
 import newIdentifier from '../../utils/newid';
+import documentService from '../../service/document';
 
 class Collapsible extends Component{
 	
@@ -12,12 +13,12 @@ class Collapsible extends Component{
 		
 	toggle= (e) => {
 		if(this.state.collapsed){
-			let sheet = window.document.styleSheets[0];
+			let sheet = documentService.styleSheets[0];
 			let tkns = e.target.id.split('_');
 			let identifier = tkns[tkns.length-1];
 			let id = tkns[0].concat('_').concat(identifier);
 			let contentId = tkns[0].concat('_').concat('content').concat('_').concat(identifier);
-			let scrollHeight = document.getElementById(contentId).scrollHeight;
+			let scrollHeight = documentService.getElementById(contentId).scrollHeight;
 			let rule = `#${id}.opened>.collapsible-content{
 				height: ${scrollHeight}px;
 				-webkit-transition:height, 0.4s ease-out;

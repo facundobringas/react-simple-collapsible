@@ -1,4 +1,4 @@
-import newId from './newid'
+import newId from '../utils/newid'
 
 test('generates incremental id from 0', () => {
   expect(newId()).toBe(0);

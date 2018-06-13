@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search renders correctly 1`] = `
+<div
+  className="collapsible collapsed"
+  id="collapsible_0"
+  onClick={[Function]}
+>
+  <div
+    className="collapsible-header"
+    id="collapsible_header_0"
+  >
+    
+    <img
+      className="collapsible-header-arrow"
+      id="collapsible_header_arrow_0"
+      src="test-file-stub"
+    />
+  </div>
+  <div
+    className="collapsible-content"
+    id="collapsible_content_0"
+  >
+    <div
+      className="collapsible-content-wrapper"
+    />
+  </div>
+</div>
+`;
